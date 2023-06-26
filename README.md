@@ -1,3 +1,3 @@
-# MERN-Stack Infrastructure
+# Bonbon+
 
-Clone this repo to provide the starter code for a future MERN-Stack project.
+Not sure if I like this name or not, I may change it later.
