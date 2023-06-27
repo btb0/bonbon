@@ -1,16 +1,21 @@
-export default function FilterLocation({ locations }) {
-  const options = locations.map(location => (
+export default function FilterLocation({ locations, activeLoc, setActiveLoc }) {
+  const sortedLocations = locations.sort();
+  const options = sortedLocations.map(location => (
     <option 
-      value=""
+      value={location}
       key={location}
     >
       {location}
     </option>
   ));
   
-  //TODO: Add Functionality to this
+  /*-====== Helper Functions ======-*/
+  function handleChange(evt) {
+    setActiveLoc(evt.target.value);
+  }
+
   return (
-    <select>
+    <select value={activeLoc} onChange={handleChange}>
       {options}
     </select>
   );
