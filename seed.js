@@ -82,6 +82,70 @@ const Item = require('./models/item');
       category: 'chips',
       location: 'Canada',
       price: 3.67
+    },
+    {
+      name: 'Milkis (Strawberry)',
+      description: 'Carbonated milk drink thing (apparently its really good idk) - strawberry flavour',
+      picture: 'https://cdn.shopify.com/s/files/1/0294/6229/8717/products/Lotte-milkis-fraise-1_2048x.jpg?v=1636254839',
+      category: 'drink',
+      location: 'South Korea',
+      price: 3.25
+    },
+    {
+      name: 'Milkis (Melon)',
+      description: 'Carbonated milk drink thing (apparently its really good idk - melon )',
+      picture: 'https://cdn.shopify.com/s/files/1/0294/6229/8717/products/Lotte-milkis-melon-miel-1_2048x.jpg?v=1636254870',
+      category: 'drink',
+      location: 'South Korea',
+      price: 3.25
+    },
+    {
+      name: 'Milkis (Original)',
+      description: 'Carbonated milk drink thing (apparently its really good idk) - original',
+      picture: 'https://cdn.shopify.com/s/files/1/0338/0694/2253/products/LotteMilkisDrinkCanOriginalFlavor8.45oz_front_2048x.jpg?v=1650574585',
+      category: 'drink',
+      location: 'South Korea',
+      price: 3.25
+    },
+    {
+      name: 'Crush Cream Soda (12 Pack)',
+      description: 'cream soda flavoured pop',
+      picture: 'https://assets.shop.loblaws.ca/products/20307938003/b1/en/angle/20307938003_angle_a01_@2.png',
+      category: 'drink',
+      location: 'Canada',
+      price: 6.97
+    },
+    {
+      name: 'Hichew (Superfruit Mix)',
+      description: 'best candy ever',
+      picture: 'https://cdn.shopify.com/s/files/1/0515/3692/0757/files/image_8d9b7b5d-d950-498a-9f57-914920326d31.jpg?v=1684376994&width=1080',
+      category: 'candy',
+      location: 'Japan',
+      price: 10.99
+    },
+    {
+      name: 'Hichew (Tropical Mix)',
+      description: 'best candy ever',
+      picture: 'https://m.media-amazon.com/images/I/71uKr+v0sdL.jpg',
+      category: 'candy',
+      location: 'Japan',
+      price: 10.99
+    },
+    {
+      name: 'Hichew (Berry Mix)',
+      description: 'best candy ever',
+      picture: 'https://res.cloudinary.com/nassau-candy/image/upload/c_fit,w_1000,h_1000,f_auto/v1616450721/46925.jpg',
+      category: 'candy',
+      location: 'Japan',
+      price: 10.99
+    },
+    {
+      name: 'Hichew (Original)',
+      description: 'best candy ever',
+      picture: 'https://cdn.shopify.com/s/files/1/0294/6229/8717/products/MORINAGA-Hi-Chew-Original-3_2048x.jpg?v=1652319891',
+      category: 'candy',
+      location: 'Japan',
+      price: 10.99
     }
   ]);
 
