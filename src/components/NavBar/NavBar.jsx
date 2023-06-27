@@ -10,15 +10,13 @@ export default function NavBar({ user, setUser }) {
   }
   return (
     <nav>
-      <Link to="/items/candy">Candy</Link>
+      <Link to="/items">Shop</Link>
       &nbsp; | &nbsp;
-      <Link to="">Chocolate</Link>
+      <Link to="">Mystery Boxes</Link>
       &nbsp; | &nbsp;
-      <Link to="">Chips</Link>
+      <Link to="">Cart</Link>
       &nbsp; | &nbsp;
-      <Link to="">Drinks</Link>
-      &nbsp; | &nbsp;
-      <Link to="">Crates</Link>
+      <Link to="">Account</Link>
       &nbsp; | &nbsp;
       <span>Welcome, {user.name}</span>
       &nbsp;&nbsp;
