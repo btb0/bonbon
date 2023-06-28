@@ -10,7 +10,7 @@ const itemSchema = new Schema({
   price: { type: Number, required: true }
 }, {
   timestamps: true,
-  toJSON: { virtuals: true }
+  toJSON: { virtuals: true } // serializes virtuals
 });
 
 itemSchema.virtual('itemSKU').get(function() {
