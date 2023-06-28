@@ -55,7 +55,7 @@ const Item = require('./models/item');
       description: 'candy gummies',
       picture: 'https://i5.walmartimages.com/asr/0aad5024-2392-4bfc-ab14-c720a0868e36.f21cd3f19c7bb5b7c567c3e551072a45.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff',
       category: 'candy',
-      location: 'United Kingdom',
+      location: 'Canada',
       price: 4.28
     }, 
     {

@@ -15,6 +15,7 @@ export default function CategoriesList({ categories, activeCat, setActiveCat }) 
   }
   return (
     <select value={activeCat} onChange={handleChange}>
+      <option value="all">All Categories</option>
       {options}
     </select>
   );

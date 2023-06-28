@@ -7,8 +7,8 @@ import FilterLocation from '../../components/FilterLocation/FilterLocation';
 export default function IndexPage() {
   const [items, setItems] = useState([]);
   const [filteredItems, setFilteredItems] = useState([]);
-  const [activeCat, setActiveCat] = useState(''); // Active Category
-  const [activeLoc, setActiveLoc] = useState(''); // Active Location
+  const [activeCat, setActiveCat] = useState('all'); // Active Category
+  const [activeLoc, setActiveLoc] = useState('all'); // Active Location
   const categoriesRef = useRef([]);
   const locationsRef = useRef([]);
 
@@ -20,14 +20,22 @@ export default function IndexPage() {
       categoriesRef.current = [...new Set(products.map(product => product.category))];
       locationsRef.current = [...new Set(products.map(product => product.location))];
       setItems(products);
-      setActiveCat(categoriesRef.current[2]); // Default Category is 'candy'
-      setActiveLoc(locationsRef.current[1]); // Default Location is 'Canada'
     }
     getItems();
   }, []);
 
+  // Filtering - Defaults to 'All' - Filter by Category and/or Location
   useEffect(function() {
-    const filteredProducts = items.filter(item => item.category === activeCat && item.location === activeLoc);
+    let filteredProducts = items;
+    if (activeCat !== 'all' && activeLoc !== 'all') {
+      filteredProducts = items.filter(item => item.location === activeLoc && item.category === activeCat);
+    }
+    if (activeCat === 'all' && activeLoc !== 'all') {
+      filteredProducts = items.filter(item => item.location === activeLoc);
+    }
+    if (activeCat !== 'all' && activeLoc === 'all') {
+      filteredProducts = items.filter(item => item.category === activeCat);
+    }
     setFilteredItems(filteredProducts);
   }, [activeCat, activeLoc, items]);
 

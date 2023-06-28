@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import './App.css';
 import AuthPage from '../AuthPage/AuthPage';
 import NavBar from '../../components/NavBar/NavBar';
 import IndexPage from '../IndexPage/IndexPage.jsx';
 import HomePage from '../../pages/HomePage/HomePage';
+import ItemDetailPage from '../ItemDetailPage/ItemDetailPage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -19,11 +20,9 @@ export default function App() {
             {/* Route components in here */}
             <Route path='/' element={<HomePage />} />
             <Route path='/items' element={<IndexPage />} />
-            {/* <Route path='/items/candy' element={<CandyPage />} /> */}
-            {/* <Route path='/candy' element={<ChocolatePage />} /> */}
-            {/* <Route path='/candy' element={<ChipPage />} /> */}
-            {/* <Route path='/candy' element={<DrinkPage />} /> */}
-            {/* <Route path='/candy' element={<CratePage />} /> */}
+            <Route path='/items/:itemId' element={<ItemDetailPage />} />
+            {/* Redirect to Home Page if the path does not match a Route above */}
+            <Route path='/*' element={<Navigate to='/' />} />
           </Routes>
         </>
         :

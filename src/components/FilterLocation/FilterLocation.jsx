@@ -16,6 +16,7 @@ export default function FilterLocation({ locations, activeLoc, setActiveLoc }) {
 
   return (
     <select value={activeLoc} onChange={handleChange}>
+      <option value="all">All Locations</option>
       {options}
     </select>
   );
