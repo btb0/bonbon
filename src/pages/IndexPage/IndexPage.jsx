@@ -41,7 +41,7 @@ export default function IndexPage() {
 
 
   const products = filteredItems.map(item => (
-    <IndexItem name={item.name} key={item._id} />
+    <IndexItem item={item} key={item._id} />
   ));
 
   return (
