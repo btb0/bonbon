@@ -1,4 +1,4 @@
-import { useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import * as itemsAPI from '../../utilities/items-api';
 
@@ -12,11 +12,12 @@ export default function ItemDetailPage() {
       setSelectedItem(item);
     }
     getItemDetails();
-  }, []);
+  }, [itemId]);
 
   return (
     <main>
       <h1>{selectedItem.name}</h1>
+      <p>SKU: {selectedItem.itemSKU}</p>
       <p>{selectedItem.description}</p>
       <p>{selectedItem.price}</p>
       <p>{selectedItem.location}</p>

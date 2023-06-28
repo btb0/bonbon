@@ -9,7 +9,12 @@ const itemSchema = new Schema({
   location: { type: String, required: true },
   price: { type: Number, required: true }
 }, {
-  timestamps: true
+  timestamps: true,
+  toJSON: { virtuals: true }
+});
+
+itemSchema.virtual('itemSKU').get(function() {
+  return this.id.slice(-8).toUpperCase();
 });
 
 module.exports = mongoose.model('Item', itemSchema);
