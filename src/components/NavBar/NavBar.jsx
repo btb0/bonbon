@@ -14,7 +14,7 @@ export default function NavBar({ user, setUser }) {
       &nbsp; | &nbsp;
       <Link to="">Mystery Boxes</Link>
       &nbsp; | &nbsp;
-      <Link to="">Cart</Link>
+      <Link to="/cart">Cart</Link>
       &nbsp; | &nbsp;
       <Link to="">Account</Link>
       &nbsp; | &nbsp;

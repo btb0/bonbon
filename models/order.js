@@ -46,4 +46,15 @@ orderSchema.virtual('orderId').get(function() {
   return this.id.slice(-9).toUpperCase();
 });
 
+orderSchema.statics.getCart = function(userId) {
+  // return the promise that resolves to a cart
+  return this.findOneAndUpdate(
+    // Querying for a user that matches the logged in user id, and then their unpaid order
+    { user: userId, isPaid: false },
+    { user: userId }, // I think this could also be an empty object (since it is already defined in the filter above) but for now I will leave it
+    // upsert creates a new doc if it doesn't exist
+    { upsert: true, new: true }
+  );
+};
+
 module.exports = mongoose.model('Order', orderSchema);

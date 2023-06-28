@@ -9,4 +9,5 @@ const ensureLoggedIn = require('../../config/ensureLoggedIn');
 router.get('/', itemsCtrl.index);
 // GET /api/items/:id
 router.get('/:id', itemsCtrl.show);
+
 module.exports = router;
