@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import * as itemsAPI from '../../utilities/items-api';
 
-export default function ItemDetailPage() {
+export default function ItemDetailPage({ cart, setCart }) {
   const [selectedItem, setSelectedItem] = useState({});
   const { itemId } = useParams();
   
@@ -22,6 +22,7 @@ export default function ItemDetailPage() {
       <p>{selectedItem.price}</p>
       <p>{selectedItem.location}</p>
       <img src={selectedItem.picture} alt={selectedItem.name} />
+      <button>Add to Cart</button>
     </main>
   );
 }

@@ -11,6 +11,7 @@ import ShoppingCartPage from '../ShoppingCartPage/ShoppingCartPage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
+  const [cart, setCart] = useState(null);
 
   return (
     <main className="App">
@@ -20,9 +21,9 @@ export default function App() {
           <Routes>
             {/* Route components in here */}
             <Route path='/' element={<HomePage />} />
-            <Route path='/items' element={<IndexPage />} />
-            <Route path='/items/:itemId' element={<ItemDetailPage />} />
-            <Route path='/cart' element={<ShoppingCartPage />} />
+            <Route path='/items' element={<IndexPage cart={cart} setCart={setCart} />} />
+            <Route path='/items/:itemId' element={<ItemDetailPage cart={cart} setCart={setCart} />} />
+            <Route path='/cart' element={<ShoppingCartPage cart={cart} setCart={setCart} />} />
             {/* Redirect to Home Page if the path does not match a Route above */}
             <Route path='/*' element={<Navigate to='/' />} />
           </Routes>

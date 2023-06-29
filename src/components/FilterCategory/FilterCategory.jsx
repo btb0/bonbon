@@ -1,4 +1,4 @@
-export default function CategoriesList({ categories, activeCat, setActiveCat }) {
+export default function FilterCategory({ categories, activeCat, setActiveCat }) {
   const sortedCategories = categories.sort();
   const options = sortedCategories.map(category => (
     <option 

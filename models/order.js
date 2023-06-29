@@ -32,8 +32,8 @@ const orderSchema = new Schema({
 });
 
 orderSchema.virtual('totalOrderPrice').get(function() {
-  // total is the accumulator, itemPrice is each item being iterated through, 0 is initial value.  
-  return this.orderItems.reduce((total, itemPrice) => total + item.extPrice, 0);
+  // total is the accumulator, item is each item being iterated through, 0 is initial value.  
+  return this.orderItems.reduce((total, item) => total + item.extPrice, 0);
 });
 
 orderSchema.virtual('totalOrderQty').get(function() {
@@ -46,6 +46,8 @@ orderSchema.virtual('orderId').get(function() {
   return this.id.slice(-9).toUpperCase();
 });
 
+// Fat models, skinny controllers (:
+
 orderSchema.statics.getCart = function(userId) {
   // return the promise that resolves to a cart
   return this.findOneAndUpdate(
@@ -55,6 +57,24 @@ orderSchema.statics.getCart = function(userId) {
     // upsert creates a new doc if it doesn't exist
     { upsert: true, new: true }
   );
+};
+
+// Instance method for adding items to cart
+orderSchema.methods.addToCart = async function(itemId) {
+  // Binding 'this' to the cart (order document)
+  const cart = this;
+  // Checking if item already exists in cart
+  const orderItem = cart.orderItems.find(orderItem => orderItem.item._id.equals(itemId));
+  if (orderItem) {
+    // If the item already exists, just increase the quantity
+    orderItem.qty += 1;
+  } else {
+    // Find the item from the items collection (from all items)
+    const Item = mongoose.model('Item');
+    const item = await Item.findById(itemId);
+    cart.orderItems.push({ item }); // Don't need to set quantity for a new item (defaults to 1 in schema)
+  }
+  return cart.save();
 };
 
 module.exports = mongoose.model('Order', orderSchema);

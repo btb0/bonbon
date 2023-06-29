@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
 import * as itemsAPI from '../../utilities/items-api';
 import IndexItem from '../../components/IndexItem/IndexItem';
-import CategoriesList from '../../components/CategoriesList/CategoriesList';
+import CategoriesList from '../../components/FilterCategory/FilterCategory';
 import FilterLocation from '../../components/FilterLocation/FilterLocation';
 
-export default function IndexPage() {
+export default function IndexPage({ cart, setCart }) {
   const [items, setItems] = useState([]);
   const [filteredItems, setFilteredItems] = useState([]);
   const [activeCat, setActiveCat] = useState('all'); // Active Category
@@ -41,7 +41,12 @@ export default function IndexPage() {
 
 
   const products = filteredItems.map(item => (
-    <IndexItem item={item} key={item._id} />
+    <IndexItem 
+      item={item} 
+      cart={cart}
+      setCart={setCart}
+      key={item._id} 
+    />
   ));
 
   return (
