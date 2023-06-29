@@ -11,7 +11,7 @@ async function getCart(req, res) {
   // getCart from logged in user which is retrieved from req.user._id
   const cart = await Order.getCart(req.user._id)
     // finding the id and finding the matching document and attaching it to the order
-    .populate({ path: 'orderItems.item', model: 'Item' }).exec();
+    // .populate({ path: 'orderItems.item', model: 'Item' }).exec();
   res.json(cart);
 }
 

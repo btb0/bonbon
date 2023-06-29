@@ -56,7 +56,7 @@ orderSchema.statics.getCart = function(userId) {
     { user: userId }, // I think this could also be an empty object (since it is already defined in the filter above) but for now I will leave it
     // upsert creates a new doc if it doesn't exist
     { upsert: true, new: true }
-  );
+  ).populate({ path: 'orderItems.item', model: 'Item' }).exec();
 };
 
 // Instance method for adding items to cart
