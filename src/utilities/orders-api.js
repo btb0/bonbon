@@ -11,3 +11,8 @@ export function addToCart(itemId) {
   // The itemId is being sent as a route paramater rather than sending in the body (either works)
   return sendRequest(`${BASE_URL}/cart/items/${itemId}`, 'POST');
 }
+
+// Updates the item's quantity in the shopping cart
+export function setItemQty(itemId, newQty) {
+  return sendRequest(`${BASE_URL}/cart/qty`, 'PUT', { itemId, newQty });
+}

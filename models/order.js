@@ -77,4 +77,20 @@ orderSchema.methods.addToCart = async function(itemId) {
   return cart.save();
 };
 
+// Instance method for setting an items qty in the cart
+orderSchema.methods.setItemQty = function(itemId, newQty) {
+  // Binding 'this' to the cart (order document)
+  const cart = this;
+  // Checking if item already exists in cart
+  const orderItem = cart.orderItems.find(orderItem => orderItem.item._id.equals(itemId));
+  if (orderItem && newQty <= 0) {
+    // if the Qty is less than or equal to 0, delete it from the cart
+    orderItem.deleteOne();
+  } else if (orderItem) {
+    // Set new qty (don't have to worry about it being a positive value because of the above if statement)
+    orderItem.qty = newQty;
+  }
+  return cart.save();
+};
+
 module.exports = mongoose.model('Order', orderSchema);

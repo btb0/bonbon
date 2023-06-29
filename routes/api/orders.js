@@ -7,5 +7,7 @@ const ensureLoggedIn = require('../../config/ensureLoggedIn');
 router.get('/cart', ordersCtrl.getCart);
 // POST /api/orders/cart/items/:id
 router.post('/cart/items/:id', ordersCtrl.addToCart);
+// PUT /api/orders/cart/qty
+router.put('/cart/qty', ordersCtrl.setItemQty);
 
 module.exports = router;
