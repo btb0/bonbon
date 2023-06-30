@@ -5,6 +5,8 @@ const ensureLoggedIn = require('../../config/ensureLoggedIn');
 
 // All routes start with /api/orders
 
+// GET /api/orders
+router.get('/', ordersCtrl.getAllOrders);
 // GET /api/orders/cart
 router.get('/cart', ordersCtrl.getCart);
 // POST /api/orders/cart/items/:id

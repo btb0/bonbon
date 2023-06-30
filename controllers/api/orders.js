@@ -4,7 +4,8 @@ module.exports = {
   getCart,
   addToCart,
   setItemQty,
-  checkout
+  checkout,
+  getAllOrders
 }
 
 // Gets all items in a users shopping cart
@@ -31,9 +32,20 @@ async function setItemQty(req, res) {
 // 'Pays' for order ==> updates isPaid property on cart to 'true'
 async function checkout(req, res) {
   const cart = await Order.getCart(req.user._id);
-  console.log(cart)
   cart.isPaid = true;
-  console.log(cart)
   await cart.save();
   res.json(cart);
+}
+
+// Retrieves all orders for the logged in user
+async function getAllOrders(req, res) {
+  try {
+    const orders = await Order.find({
+      user: req.user._id,
+      isPaid: true
+    });
+    res.json(orders);
+  } catch {
+    res.status(400).json('Couldn\'t find orders ):');
+  }
 }

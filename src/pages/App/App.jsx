@@ -8,6 +8,7 @@ import IndexPage from '../IndexPage/IndexPage.jsx';
 import HomePage from '../../pages/HomePage/HomePage';
 import ItemDetailPage from '../ItemDetailPage/ItemDetailPage';
 import ShoppingCartPage from '../ShoppingCartPage/ShoppingCartPage';
+import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -24,6 +25,7 @@ export default function App() {
             <Route path='/items' element={<IndexPage cart={cart} setCart={setCart} />} />
             <Route path='/items/:itemId' element={<ItemDetailPage cart={cart} setCart={setCart} />} />
             <Route path='/cart' element={<ShoppingCartPage cart={cart} setCart={setCart} />} />
+            <Route path='/orders' element={<OrderHistoryPage />} />
             {/* Redirect to Home Page if the path does not match a Route above */}
             <Route path='/*' element={<Navigate to='/' />} />
           </Routes>
