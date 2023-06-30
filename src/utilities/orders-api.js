@@ -16,3 +16,8 @@ export function addToCart(itemId) {
 export function setItemQty(itemId, newQty) {
   return sendRequest(`${BASE_URL}/cart/qty`, 'PUT', { itemId, newQty });
 }
+
+// 'Pays' for order - Update cart's isPaid property to true
+export function checkout() {
+  return sendRequest(`${BASE_URL}/cart/checkout`, 'POST');
+}

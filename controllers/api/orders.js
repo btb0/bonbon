@@ -3,15 +3,14 @@ const Order = require('../../models/order');
 module.exports = {
   getCart,
   addToCart,
-  setItemQty
+  setItemQty,
+  checkout
 }
 
 // Gets all items in a users shopping cart
 async function getCart(req, res) {
   // getCart from logged in user which is retrieved from req.user._id
   const cart = await Order.getCart(req.user._id)
-    // finding the id and finding the matching document and attaching it to the order
-    // .populate({ path: 'orderItems.item', model: 'Item' }).exec();
   res.json(cart);
 }
 
@@ -26,5 +25,15 @@ async function addToCart(req, res) {
 async function setItemQty(req, res) {
   const cart = await Order.getCart(req.user._id);
   await cart.setItemQty(req.body.itemId, req.body.newQty);
+  res.json(cart);
+}
+
+// 'Pays' for order ==> updates isPaid property on cart to 'true'
+async function checkout(req, res) {
+  const cart = await Order.getCart(req.user._id);
+  console.log(cart)
+  cart.isPaid = true;
+  console.log(cart)
+  await cart.save();
   res.json(cart);
 }
