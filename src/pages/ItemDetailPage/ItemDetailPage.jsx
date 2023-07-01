@@ -21,7 +21,7 @@ export default function ItemDetailPage({ cart, setCart }) {
     const updatedCart = await ordersAPI.addToCart(itemId);
     setCart(updatedCart)
   }
-
+  
   return (
     <main>
       <h1>{selectedItem.name}</h1>

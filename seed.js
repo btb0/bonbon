@@ -11,8 +11,8 @@ const Item = require('./models/item');
   await Item.deleteMany({});
   const items = await Item.create([
     {
-      "name": "Aero",
-      "description": "chocolate bar",
+      "name": "Aero (4 Pack)",
+      "description": "Feel the bubbles melt with AERO Milk Chocolate Bar (4 x 42g). The smooth and creamy taste of pure milk chocolate for a melt-in-your-mouth experience. Made with sustainably sourced cocoa from the NESTLÉ COCOA PLAN. Great for baking and s’mores.",
       "picture": "https://i.ibb.co/5LHvWnJ/Aero.webp",
       "category": "chocolate",
       "location": "Canada",
@@ -20,7 +20,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Almond Joy",
-      "description": "chocolate ",
+      "description": "Almond Joy consists of chewy, toothsome coconut that is topped off with whole crunchy almonds that are encased in a thick coating of luscious tasting milk chocolate! Joy to the world! The Almond Joy Bar has been loved since 1946! It remains a favourite candy bar to this day!",
       "picture": "https://i.ibb.co/ScGJDmy/almondjoy.webp",
       "category": "chocolate",
       "location": "United States",
@@ -28,7 +28,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Binggrae Banana Flavored Milk (6 Pack)",
-      "description": "banana milk",
+      "description": "These Banana Flavored Milk drinks from Binggrae are like little, portable banana smoothies. Sweet and refreshing, they've been a bestseller in Korea for nearly half a century. Supremely milky, with just the right amount of banana flavor, they're perfect for enjoying on their own, or alongside your favorite spicy dish.",
       "picture": "https://i.ibb.co/fv755mG/Binggrae-Banana-Flavored-Milk.jpg",
       "category": "drink",
       "location": "South Korea",
@@ -36,7 +36,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Bits & Bites",
-      "description": "chips",
+      "description": "Bits & Bites Snack Mix is a better-for-you snack with zero trans fat. Dig in - there is a party in every handful! 175 gram bag of Bits & Bites original.",
       "picture": "https://i.ibb.co/z2cD8L8/Bitsand-Bites.jpg",
       "category": "chips",
       "location": "Canada",
@@ -44,7 +44,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Bits & Bites (Barbecue)",
-      "description": "chips",
+      "description": "Bits & Bites Snack Mix is a better-for-you snack with zero trans fat. Dig in - there is a party in every handful! 175 gram bag of Bits & Bites barbecue flavor.",
       "picture": "https://i.ibb.co/QPG32yM/Bitsand-Bites-BBQ.jpg",
       "category": "chips",
       "location": "Canada",
@@ -52,7 +52,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Bits & Bites (Cheddar)",
-      "description": "chips",
+      "description": "Bits & Bites Snack Mix is a better-for-you snack with zero trans fat. Dig in - there is a party in every handful! 175 gram bag of Bits & Bites cheddar flavor.",
       "picture": "https://i.ibb.co/2tqvvzC/Bitsand-Bites-Cheddar.webp",
       "category": "chips",
       "location": "Canada",
@@ -60,7 +60,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Buffalo Rock Grapico",
-      "description": "drink",
+      "description": "Grapico is a grape-flavored soft drink which is produced under license to Birmingham’s Buffalo Rock and distributed to the Southern United States.",
       "picture": "https://i.ibb.co/ZS1VPKw/grapico.png",
       "category": "drink",
       "location": "United States",
@@ -68,7 +68,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Cadbury Caramilk (4 Pack)",
-      "description": "chocolate with caramel inside",
+      "description": "We've been indulging in these delectable bars since 1968! The Caramilk Bar is decadently filled with golden, nectarous caramel that is encased in rich and smooth milk chocolate.",
       "picture": "https://i.ibb.co/p3QMyLy/Cadbury-Caramilk.webp",
       "category": "chocolate",
       "location": "Canada",
@@ -76,7 +76,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Calbee Kata-age Potato Chips (Garlic Butter)",
-      "description": "chips",
+      "description": "Enjoy snacking on these thick, hard, and super crunchy potato chips! Each piece is generously flavored with garlic butter. Made in Japan by Calbee.",
       "picture": "https://i.ibb.co/vz9SbnW/Calbee-Kata-age-Garlic-Butter.jpg",
       "category": "chips",
       "location": "Japan",
@@ -84,7 +84,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Calbee Kata-age Potato Chips (Grilled Seaweed)",
-      "description": "chips",
+      "description": "Enjoy snacking on these thick, hard, and super crunchy potato chips! Each piece is generously flavored with grilled seaweed. Made in Japan by Calbee.",
       "picture": "https://i.ibb.co/1JhpDYx/Calbee-Kata-Age-Grilled-Seaweed.jpg",
       "category": "chips",
       "location": "Japan",
@@ -92,7 +92,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Calbee Kata-age Potato Chips (Shio-Sesame Oil)",
-      "description": "chips",
+      "description": "Enjoy snacking on these thick, hard, and super crunchy potato chips! Each piece is generously flavored with shio-sesame oil. Made in Japan by Calbee.",
       "picture": "https://i.ibb.co/RPP690H/Calbee-Kata-age-Sesame-Oil.jpg",
       "category": "chips",
       "location": "Japan",
@@ -100,7 +100,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Coffee Crisp",
-      "description": "Chocolate bar",
+      "description": "Refresh your taste buds with a NESTLÉ COFFEE CRISP. The harmonious blend of crispy wafer, thin chocolatey coating, and subtle coffee aroma, makes for a nice, light snack™. Not too heavy, not too sweet – perfectly balanced.",
       "picture": "https://i.ibb.co/1nFtsFh/Coffee-Crisp.png",
       "category": "chocolate",
       "location": "Canada",
@@ -108,7 +108,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Crispy Crunch",
-      "description": "crunchy crisp",
+      "description": "Crispy Crunch is a peanut butter chocolate bar made by Cadbury Canada. It was first introduced to Canada in 1912 and consists of a crispy peanut flake inside a milk chocolate-coated candy bar. It was originally made by Neilson, but they sold the brand to Cadbury Canada in 1996.",
       "picture": "https://i.ibb.co/GnsHcPN/crispycrunch.jpg",
       "category": "chocolate",
       "location": "Canada",
@@ -116,7 +116,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Crunchie",
-      "description": "chocolate bar curnciheiahdia",
+      "description": "Have some Canadian gold with the Crunchie Bar! This Canadian Chocolate Bar is among the gold standard of bars.\nFilled with golden, airy sponge toffee, encased in a layer of delicious Cadbury chocolate. Each and every bite is filled with that famous, mouthwatering\ncrunch and pairs perfectly with that velvety-rich chocolate.",
       "picture": "https://i.ibb.co/WcsPbmH/crunchie.jpg",
       "category": "chocolate",
       "location": "Canada",
@@ -124,7 +124,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Crush Cream Soda (12 Pack)",
-      "description": "Pop",
+      "description": "Crush Cream Soda, Released in Canada and loved by every Canadian since 1916. Crush Cream Soda delivers a sweet, creamy goodness to your taste buds each time! The perfect size to bring to your next party or get together. You'll want to get a hold of this one…",
       "picture": "https://i.ibb.co/ZLFcCJ6/Crush-Cream-Soda.png",
       "category": "drink",
       "location": "Canada",
@@ -132,7 +132,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Hichew (Berry Mix)",
-      "description": "hichews",
+      "description": "HI-CHEW unique double layer structure is designed to recreate real fruits taste. When you eat real fruits, you feel strong freshness at the first bite. Then,you'll sense spreading sweetness or sourness of the fruit's flesh in your mouth. This is the taste experience that only HI-CHEW can offer thanks to its double layer. (Berry Mix)",
       "picture": "https://i.ibb.co/mT7wJ2P/Hichew-Berry.webp",
       "category": "candy",
       "location": "Japan",
@@ -140,7 +140,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Hichew (Original)",
-      "description": "hichew",
+      "description": "HI-CHEW unique double layer structure is designed to recreate real fruits taste. When you eat real fruits, you feel strong freshness at the first bite. Then,you'll sense spreading sweetness or sourness of the fruit's flesh in your mouth. This is the taste experience that only HI-CHEW can offer thanks to its double layer. (Original Mix)",
       "picture": "https://i.ibb.co/LxgKrRH/Hichew-Original.webp",
       "category": "candy",
       "location": "Japan",
@@ -148,7 +148,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Hichew (Superfruit Mix)",
-      "description": "best candy",
+      "description": "HI-CHEW unique double layer structure is designed to recreate real fruits taste. When you eat real fruits, you feel strong freshness at the first bite. Then,you'll sense spreading sweetness or sourness of the fruit's flesh in your mouth. This is the taste experience that only HI-CHEW can offer thanks to its double layer. (Superfruit Mix)",
       "picture": "https://i.ibb.co/Vgprsmn/Hichew-Superfruit.webp",
       "category": "candy",
       "location": "Japan",
@@ -156,7 +156,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Hichew (Tropical Mix)",
-      "description": "i love hichews",
+      "description": "HI-CHEW unique double layer structure is designed to recreate real fruits taste. When you eat real fruits, you feel strong freshness at the first bite. Then,you'll sense spreading sweetness or sourness of the fruit's flesh in your mouth. This is the taste experience that only HI-CHEW can offer thanks to its double layer. (Tropical Mix)",
       "picture": "https://i.ibb.co/BP3Cvy9/Hichew-Tropical.jpg",
       "category": "candy",
       "location": "Japan",
@@ -164,7 +164,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Kanro Marosh Marshmallows - Melon Soda",
-      "description": "candy",
+      "description": "The latest gummy offering by Kanro is called Marosh. It has a firm marshmallow texture with tiny flavor crystals on the outside. They have a teardrop shape and come if a few different flavors. Resealable pouch so you can easily carry it with you. (Melon Soda Flavor)",
       "picture": "https://i.ibb.co/5FMT8r6/Kanro-Marosh-Marshmallows-Melon-Soda.jpg",
       "category": "candy",
       "location": "Japan",
@@ -172,7 +172,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Kanro Marosh Marshmallows - Plum Soda",
-      "description": "Candy",
+      "description": "The latest gummy offering by Kanro is called Marosh. It has a firm marshmallow texture with tiny flavor crystals on the outside. They have a teardrop shape and come if a few different flavors. Resealable pouch so you can easily carry it with you. (Plum Soda Flavor)",
       "picture": "https://i.ibb.co/34mHXd4/Kanro-Marosh-Plum-Soda.jpg",
       "category": "candy",
       "location": "Japan",
@@ -180,7 +180,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Kit Kat Matcha Green Tea",
-      "description": "Chocolate bar",
+      "description": "These mini wafer bars are generously covered with matcha with a more robust flavor than regular green tea-flavored chocolate! Enjoy these bittersweet treats that come individually wrapped. A bag of mini chocolate bars with strong matcha flavor. Contains 10 individually wrapped mini packs. Made in Japan by Nestlé",
       "picture": "https://i.ibb.co/QHnsZM3/Kit-Kat-Match-Green-Tea.webp",
       "category": "chocolate",
       "location": "Japan",
@@ -188,7 +188,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Korean Red Ginseng Candy",
-      "description": "candy ginseng",
+      "description": "It is of course sweet - but not overly sweet! It has a gentle aroma of red ginseng that you can savor as you suck or chew on it. Each candy is individually wrapped to make it easy to store and eat. Place a few on your coffee table and enjoy when you're craving something sweet.",
       "picture": "https://i.ibb.co/n1V1Rxt/Korean-Red-Ginseng-Candy.jpg",
       "category": "candy",
       "location": "South Korea",
@@ -196,7 +196,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Lays Ketchup Chips",
-      "description": "ketchup flavored chips (not as bad as they sound)",
+      "description": "Canadians know a thing or two about great taste and we love our Ketchup! Thats why the combination of Lay's fresh taste and tangy tomato seasoning has become a Canadian taste tradition. This crunchy, savoury flavour is loved by everyone!",
       "picture": "https://i.ibb.co/dJ4m6VZ/Lays-Ketchup-Chips.webp",
       "category": "chips",
       "location": "Canada",
@@ -204,7 +204,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Lotte Binch",
-      "description": "chocolate snacks",
+      "description": "Binch cookies are individually wrapped, round and thin cookies with chocolate on one side and cracker on the other. The milk chocolate on the cracker depicts detailed illustrations such as a schooner, a man on a horse, and a harp. Crunchy in texture, and well-balanced between chocolate and biscuit, these biscuits are one of the most popular in Korea.",
       "picture": "https://i.ibb.co/FnHZcB2/Lotte-Binch.webp",
       "category": "chocolate",
       "location": "South Korea",
@@ -212,7 +212,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Lotte Dream Cacao",
-      "description": "chocolate cubes",
+      "description": "Made from premium quality cocoa beans, Dream Cacao offers a full body chocolate taste and the health benefits of antioxidants. Besides increasing energy, promoting healthy skin and reducing the risk of heart disease, dark chocolate also stimulates the production of Endorphins which elevates our mood! Now you can enjoy the irresistible taste of chocolate without the guilt!",
       "picture": "https://i.ibb.co/3spN4jP/Lotte-Dream-Cacao.jpg",
       "category": "chocolate",
       "location": "South Korea",
@@ -220,7 +220,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Lotte Green Grape Hard Candy",
-      "description": "hard candy",
+      "description": "LOTTE Green Grape Hard Candy are individually wrapped, so they're very convenient to carry around and shareable to friends and family. The green grape flavor of this hard candy is round, refreshing, sweet, and gives off a fragrant. This candy contains 12% of green grape juice.",
       "picture": "https://i.ibb.co/G3bBZYS/Lotte-Green-Grape-Hard-Candy.webp",
       "category": "candy",
       "location": "South Korea",
@@ -228,7 +228,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Lotte Malang Cow Milk Candy",
-      "description": "candy",
+      "description": "Korea’s Favorite Soft and Chewy Candy made of fresh high-grade milk. A soft and fluffy Lotte Malang Cow candy with a milk flavor. The soft texture gives a delicious marshmellow like chewiness!",
       "picture": "https://i.ibb.co/3mHnw1s/Lotte-Malang-Cow-Milk-Candy.webp",
       "category": "candy",
       "location": "South Korea",
@@ -236,7 +236,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Lotte Malang Cow Milk Candy (Strawberry)",
-      "description": "candy",
+      "description": "Korea’s Favorite Soft and Chewy Candy made of fresh high-grade milk. A soft and fluffy Lotte Malang Cow candy with a milk flavor. The soft texture gives a delicious marshmellow like chewiness! (Strawberry flavor)",
       "picture": "https://i.ibb.co/kBmPHjW/Lotte-Malang-Cow-Milk-Strawberry.jpg",
       "category": "candy",
       "location": "South Korea",
@@ -244,7 +244,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Maynards Swedish Berries",
-      "description": "berries that are swedish made in canada",
+      "description": "Have a taste of the good old days with Maynards Candy Swedish Berries! An old fashioned Canadain Candy that is sure to get your tastebuds in a \"berry\" delicious tizzy! This red chewy candy looks just like a real berry and as an added bonus, it's also made with real fruit juice! These sweet and succulent old fashioned candies are fat-free and are made right here in Canada!",
       "picture": "https://i.ibb.co/VQ9qJKD/Marnards-Swedish-Berries.webp",
       "category": "candy",
       "location": "Canada",
@@ -252,7 +252,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Maynards Wine Gums",
-      "description": "gummies",
+      "description": "More Fine Than Wine. It’s nearly impossible to resist the taste of Maynards Wine Gums. These classic confections are labeled with names like “port,” “sherry,” and “Champagne,” but they actually come in flavours like blackcurrant, orange, and lime.",
       "picture": "https://i.ibb.co/fSXJJ2b/Maynards-Wine-Gums.webp",
       "category": "candy",
       "location": "Canada",
@@ -260,7 +260,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Milkis (Melon)",
-      "description": "carbonated drink",
+      "description": "Milkis is a South Korean soft drink produced by Lotte Chilsung, a company which released the beverage in 1989, labeling it as a milk and yogurt soda. Some like to describe it as a melting mousse made with frozen yogurt. It is made with carbonated water, corn syrup, sugar, and milk. (Melon Flavor)",
       "picture": "https://i.ibb.co/f0dMNvS/Milkis-Melon.webp",
       "category": "drink",
       "location": "South Korea",
@@ -268,7 +268,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Milkis (Original)",
-      "description": "carbonated drink",
+      "description": "Milkis is a South Korean soft drink produced by Lotte Chilsung, a company which released the beverage in 1989, labeling it as a milk and yogurt soda. Some like to describe it as a melting mousse made with frozen yogurt. It is made with carbonated water, corn syrup, sugar, and milk.",
       "picture": "https://i.ibb.co/hXZ6ZLr/Milkis-Original.webp",
       "category": "drink",
       "location": "South Korea",
@@ -276,7 +276,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Milkis (Strawberry)",
-      "description": "carbonated drink",
+      "description": "Milkis is a South Korean soft drink produced by Lotte Chilsung, a company which released the beverage in 1989, labeling it as a milk and yogurt soda. Some like to describe it as a melting mousse made with frozen yogurt. It is made with carbonated water, corn syrup, sugar, and milk. (Strawberry Flavor)",
       "picture": "https://i.ibb.co/ysyRb10/Milkis-Strawberry.webp",
       "category": "drink",
       "location": "South Korea",
@@ -284,7 +284,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Milky Way",
-      "description": "chocolate bar not space",
+      "description": "Treat yourself to a distractingly delicious, delightful chocolate experience of MILKY WAY. Made with creamy caramel and smooth nougat, enrobed in rich milk chocolate.",
       "picture": "https://i.ibb.co/ZmyNV8K/milkyway.png",
       "category": "chocolate",
       "location": "United States",
@@ -292,7 +292,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Mr. Big",
-      "description": "chocolate bar mr big",
+      "description": "Mr. Big Chocolate Bar is the largest candy bar made by Cadbury Canada. Yes, Mr. Big Chocolate is 8 inches long but is that enough to be called Mr. Big? This chocolate bar is filled with a vanilla wafer, rice crisps, peanuts and caramel then covered in a delicious Cadbury chocolate. Ok. This bar deserves to be called Mr.Big! A Canadian Chocolate Bar Favourite.",
       "picture": "https://i.ibb.co/kD0c7L0/mrBig.png",
       "category": "chocolate",
       "location": "Canada",
@@ -300,15 +300,15 @@ const Item = require('./models/item');
     },
     {
       "name": "Nestlé Smarties",
-      "description": "smarties canada version",
+      "description": "Make your day more colourful with NESTLÉ SMARTIES (45 g), the Canadian favourite candy for over 80 years. Each box contains the classic, delicious combination of milk chocolate covered in vibrant candy shells. Made with sustainably sourced cocoa, these colourful delights are made with natural colours and flavours.",
       "picture": "https://i.ibb.co/8zZtSgt/Nestle-Smarties.jpg",
       "category": "chocolate",
       "location": "Canada",
       "price": 11.98
     },
     {
-      "name": "Oh Henry!",
-      "description": "chocolate bar henry",
+      "name": "Oh Henry! (4 Pack)",
+      "description": "OH HENRY! candy bar is made with big crunchy peanuts, creamy caramel, chewy fudge, covered with a chocolaty coating. Its delicious combination of ingredients feeds all your senses and satisfies your appetite to help re-energize you and keep you going. Keep this pack close for snacking, sharing or gifting.",
       "picture": "https://i.ibb.co/bvZfH36/ohhenry.webp",
       "category": "chocolate",
       "location": "Canada",
@@ -316,7 +316,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Orion Kkobuk Turtle Corn Chips",
-      "description": "Chips that taste like corn",
+      "description": "Corn soup with turtle chips flavoring. 916 kcal. No gluten. extremely crunchy structure with 4 layers. This snack's four crispy layers harmoniously and thoroughly incorporate the sweet corn flavour.",
       "picture": "https://i.ibb.co/xCwzcTv/Orion-Kkobuk-Turtle-Corn-Chips.png",
       "category": "chips",
       "location": "South Korea",
@@ -324,7 +324,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Pepero (Chocofilled)",
-      "description": "chocolate stick",
+      "description": "Nude Flavour Biscuit Sticks. Harmony of crunchy cookies and chocolate frosting.\nImmensely beloved as long stick chocolate snacks that are fun to munch. Enjoy chocolate on the go? These cookie sticks will definitely leave you wanting more! Crispy biscuit sticks covered with chocolate frosting and cookie crumbs – one stick is never enough!",
       "picture": "https://i.ibb.co/V0ykgFW/Pepero-Choco-Filled.png",
       "category": "chocolate",
       "location": "South Korea",
@@ -332,7 +332,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Pepero (Crunchy)",
-      "description": "chocolate stick snack thing",
+      "description": "Crunchy biscuit sticks, lightly coated in indulgent chocolate and crunchy pieces. A favourite snack, straight from Korea. Serve on their own, or with ice cream.",
       "picture": "https://i.ibb.co/3WH2R1W/Pepero-Crunchy.jpg",
       "category": "chocolate",
       "location": "South Korea",
@@ -340,7 +340,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Pepero (White Cookie)",
-      "description": "chocolate snack",
+      "description": "These deliciously crunchy biscuit sticks are a fun and rarer alternative to the popular Glico Pocky. Pepero is Korea's answer to Pocky, produced by Korean confectionery company Lotte. To stand out from the crowd, they have made Pepero sticks with special features! Pepero Cookie & Cream, also known as \"White Cookie\", is a biscuit stick covered in gorgeous thick creamy frosting, generously sprinkled with chunky bits of crushed chocolate cookie.",
       "picture": "https://i.ibb.co/NTV7f5q/Pepero-White-Cookie.webp",
       "category": "chocolate",
       "location": "South Korea",
@@ -348,7 +348,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Ruffles All Dressed",
-      "description": "chips that are dressed",
+      "description": "All Dressed Chips by Ruffles are exactly what they sound like, potato chips flavored with ALL the dressings (ketchup, salt, vinegar, barbecue, sour cream, onion and other mystery seasonings.) Beloved by Canadians, many are befuddled that this great flavor is not available in the United States.",
       "picture": "https://i.ibb.co/rvhw5kh/Ruffles-All-Dressed.webp",
       "category": "chips",
       "location": "Canada",
@@ -356,7 +356,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Senjaku Peach Candy",
-      "description": "candy peach",
+      "description": "Although they look senjaku (small and delicate), these cute peach candies pack a big, sweet, flavorful punch! There are five flavors in each bag including: \"Peach Soft Serve Ice Cream\" with a creamy vanilla center, “Peach Squash” with fizzy rock candy, “Peach Smoothie” with a fruity refreshing mix, and “Peach Tart”, which tastes like the delicious pastry! Each candy is individually wrapped so it’s great for sharing or taking on the go!",
       "picture": "https://i.ibb.co/25CdJDV/Senjaku-Peach-Candy.webp",
       "category": "candy",
       "location": "Japan",
@@ -364,7 +364,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Shindangdong Tteokbokki Chips",
-      "description": "i like tteokbokki",
+      "description": "A delicious proposal for a tteokbokki bachelor who popped out of a Sindangdong jar. A tteokbokki snack with a rich, deep flavor made with Sunchang gochujang. Time to give sweet pleasure, time to fill your mouth softly! Always enjoy the taste of Haitai Confectionery.",
       "picture": "https://i.ibb.co/ZLtFLBK/Shindangdong-Tteokbokki-Chips.webp",
       "category": "chips",
       "location": "South Korea",
@@ -372,7 +372,7 @@ const Item = require('./models/item');
     },
     {
       "name": "Skor",
-      "description": "chocolate bar skor",
+      "description": "SKOR bars feature rich butter toffee enrobed with delicious milk chocolate to create a distinctively rich treat. Decadent by themselves, SKOR bars are also great in recipes or crushed over ice cream and desserts.",
       "picture": "https://i.ibb.co/5jqRPpy/Skor.jpg",
       "category": "chocolate",
       "location": "Canada",
@@ -380,7 +380,7 @@ const Item = require('./models/item');
     },
     {
       "name": "UHA Mikakuto Water Gummies",
-      "description": "candy",
+      "description": "The Mizu Gummy candy, created based on the concept of water, is shaped like a dewdrop. It has a water-like clarity and fruitiness, and its aftertaste is refreshing like water. You can hardly imagine from the appearance, as in clear coffee, but these gummies have a Kyoho (巨峰) grape flavor.",
       "picture": "https://i.ibb.co/1Ld1FRC/UHAMikakuto-Water-Gummies.png",
       "category": "candy",
       "location": "Japan",
