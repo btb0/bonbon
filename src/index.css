@@ -1,0 +1,24 @@
+html {
+  overflow-y: auto; /* Removes Bulma's dumb scrollbar that is there not matter what */
+}
+
+:root {
+  --main-purple: rgb(85, 78, 156);
+  --light-purple: rgb(104, 98, 168);
+  --lighter-purple: rgb(124, 113, 179);
+  --lightest-purple: rgb(154, 128, 197);
+}
+
+.flex-ctr-ctr-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-ctr-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

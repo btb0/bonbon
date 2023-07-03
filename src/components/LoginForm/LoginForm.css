@@ -1,0 +1,35 @@
+.LoginForm {
+  max-width: 50vmin;
+}
+
+.LoginForm input[type=email] {
+  margin-bottom: 2em;
+}
+
+.LoginForm input:focus {
+  caret-color: rgb(154, 128, 199);
+  border-color: rgb(154, 128, 199);
+  box-shadow: none;
+}
+
+.LoginForm label {
+  align-self: flex-start;
+  color: rgb(148, 148, 148);
+}
+
+.forgot-password {
+  align-self: flex-end;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: rgb(148, 148, 148);
+  background-color: transparent;
+  margin-top: 7.5px;
+  margin-bottom: 2em;
+}
+
+.login-btn {
+  padding: 0.5em;
+  width: 9.5em;
+  letter-spacing: 1px;
+}

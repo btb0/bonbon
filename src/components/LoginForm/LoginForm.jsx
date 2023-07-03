@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import * as usersService from '../../utilities/users-service';
+import './LoginForm.css';
 
 export default function LoginForm({ setUser }) {
   const [credentials, setCredentials] = useState({
@@ -27,18 +28,45 @@ export default function LoginForm({ setUser }) {
     }
   }
 
+  function handleForgotPassword() {
+    alert('Well, try really hard to remember it because this doesn\'t work yet ):')
+  }
+
   return (
-    <div>
-      <div className="form-container">
-        <form autoComplete="off" onSubmit={handleSubmit}>
-          <label>Email</label>
-          <input type="email" name="email" value={credentials.email} onChange={handleChange} required />
-          <label>Password</label>
-          <input type="password" name="password" value={credentials.password} onChange={handleChange} required />
-          <button type="submit">LOG IN</button>
-        </form>
-      </div>
+    <>
+      <form 
+        autoComplete="off" 
+        onSubmit={handleSubmit} 
+        className="flex-ctr-ctr-col LoginForm"
+      >
+        <label>Email</label>
+        <input 
+          className="input" 
+          type="email" 
+          name="email" 
+          value={credentials.email} 
+          onChange={handleChange} 
+          required 
+        />
+        <label>Password</label>
+        <input 
+          className="input" 
+          type="password" 
+          name="password" 
+          value={credentials.password} 
+          onChange={handleChange} 
+          required 
+        />
+        <button 
+          className="forgot-password" 
+          onClick={handleForgotPassword}>Forgot Password?
+        </button>
+        <button 
+          className="button is-responsive is-rounded login-btn" 
+          type="submit"
+        >Sign in</button>
+      </form>
       <p className="error-message">&nbsp;{error}</p>
-    </div>
+    </>
   );
 }
