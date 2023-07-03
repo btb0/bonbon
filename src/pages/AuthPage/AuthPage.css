@@ -19,12 +19,13 @@
 }
 
 .title-container {
-  margin-bottom: 2.5vmin;
+  margin-bottom: 3.5vmin;
 }
 
 .bonbon-h1 {
   font-family: 'Darumadrop One', cursive;
-  font-size: 48px;
+  font-size: 78px;
+  /* font-size: 48px; */
   color: var(--light-purple);
 }
 

@@ -29,7 +29,7 @@ export default function LoginForm({ setUser }) {
   }
 
   function handleForgotPassword() {
-    alert('Well, try really hard to remember it because this doesn\'t work yet ):')
+      alert('Well, try really hard to remember it because this doesn\'t work yet ):')
   }
 
   return (
@@ -59,6 +59,7 @@ export default function LoginForm({ setUser }) {
         />
         <button 
           className="forgot-password" 
+          type="button"
           onClick={handleForgotPassword}>Forgot Password?
         </button>
         <button 

@@ -1,34 +1,29 @@
-.LoginForm {
-  margin-top: 4vmin;
+.SignUpForm {
+  margin-top: 2vmin;
 }
 
-.LoginForm input[type=email] {
-  margin-bottom: 2em;
-}
-
-.LoginForm input:focus {
+.SignUpForm input:focus {
   caret-color: var(--lightest-purple);
   border-color: var(--lightest-purple);
   box-shadow: none;
 }
 
-.LoginForm label {
+.SignUpForm input[type=text],
+.SignUpForm input[type=email],
+.SignUpForm input[name=password] {
+  margin-bottom: 1.5em;
+}
+
+.SignUpForm input[name=confirm] {
+  margin-bottom: 2em;
+}
+
+.SignUpForm label {
   align-self: flex-start;
   color: var(--light-grey);
 }
 
-.forgot-password {
-  align-self: flex-end;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  color: var(--light-grey);
-  background-color: transparent;
-  margin-top: 7.5px;
-  margin-bottom: 2em;
-}
-
-.login-btn {
+.signup-btn {
   padding: 0.5em;
   width: 9.5em;
   letter-spacing: 1px;
@@ -39,7 +34,7 @@
   overflow: hidden;
 }
 
-.login-btn:hover {
+.signup-btn:hover {
   border: 1px solid var(--light-purple);
   background-color: white;
   color: var(--light-purple);
