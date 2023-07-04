@@ -1,0 +1,34 @@
+.details-container {
+  margin: 5vmin 15vmin;
+}
+
+.details-info h1 {
+  font-size: 2.5em;
+  font-family: 'Palanquin Dark', sans-serif;
+}
+
+.details-info h2 {
+  margin-top: 0.2em;
+  font-size: 1.6em;
+}
+
+.details-info h5 {
+  margin-top: 1.5em;
+  font-size: 1.05em;
+}
+
+.details-info p {
+  margin-top: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.details-info button {
+  margin-top: 7.5vmin;
+  width: 75%;
+  padding: 1.5em;
+  border: 1px solid var(--light-purple);
+  color: var(--light-purple);
+  /* background-color: var(--light-purple);
+  color: white; */
+}
