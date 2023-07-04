@@ -1,5 +1,5 @@
 html {
-  overflow-y: auto; /* Removes Bulma's dumb scrollbar that is there not matter what */
+  overflow-y: auto; /* Removes Bulma's dumb scrollbar that is there no matter what */
 }
 
 *, ::after, ::before {
@@ -17,6 +17,7 @@ body {
   --lightest-purple: rgb(154, 128, 199);
   --light-grey: rgb(148, 148, 148);;
   --white-line: #f6f6f6;
+  --grey-text: rgb(102, 102, 102);
 }
 
 .flex-ctr-ctr-col {

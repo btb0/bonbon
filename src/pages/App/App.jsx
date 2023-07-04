@@ -18,7 +18,7 @@ export default function App() {
     <main className="App">
       { user ?
         <>
-          <NavBar user={user} setUser={setUser} />
+          <NavBar user={user} setUser={setUser} cart={cart} />
           <Routes>
             {/* Route components in here */}
             <Route path='/' element={<HomePage />} />

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import * as ordersAPI from '../../utilities/orders-api';
 import './OrderItem.css';
 
@@ -14,14 +15,14 @@ export default function OrderItem({ orderItem, setCart }) {
     <tr className='center item-row'>
       <td>
         <div className='flex item-name'>
-            <a className='no-spacing' href={`items/${orderItem.item._id}`}>
+            <Link className='no-spacing' to={`/items/${orderItem.item._id}`}>
               <div className='item-img-container'>
                 <img className="item-img" src={orderItem.item.picture} alt={orderItem.item.name}/>
               </div>
-            </a>
-            <a className='no-spacing' href={`items/${orderItem.item._id}`}>
+            </Link>
+            <Link className='no-spacing' to={`/items/${orderItem.item._id}`}>
               <p className='centered-text'>{orderItem.item.name}</p>
-            </a>
+            </Link>
         </div>
       </td>
       <td className='middle'>${orderItem.item.price?.toFixed(2)}</td>

@@ -1,5 +1,11 @@
 .CartList {
   padding: 0 7vmin;
+  color: var(--grey-text);
+}
+
+.CartList a {
+  color: var(--grey-text);
+  /* color: var(--lighter-purple); */
 }
 
 .cart-table {

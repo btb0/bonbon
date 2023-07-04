@@ -2,7 +2,6 @@ import OrderItem from '../OrderItem/OrderItem';
 import './CartList.css';
 
 export default function CartList({ order, setCart }) {
-  console.log(order)
   if (!order) return null;
 
   const orderItems = order.orderItems.map(item => 
@@ -15,7 +14,6 @@ export default function CartList({ order, setCart }) {
 
   return (
     <section className='CartList'>
-      { order.orderItems.length >= 1 ? 
         <table className='cart-table'>
           <thead className='cart-list-titles'>
             <tr className='center'>
@@ -29,9 +27,8 @@ export default function CartList({ order, setCart }) {
             {orderItems}
           </tbody>
         </table>
-        :
-        <p>Your cart is currently empty.</p>
-      }
     </section>
   );
 }
+
+// RETURN POINT IF NEED BE
