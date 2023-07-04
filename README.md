@@ -73,3 +73,7 @@ Things I would like to add in the future are:
 
 - Considering this is only a mock website and these products are not actually from myself, I was limited to simple images with white backgrounds and not too many options on the way they look and the quality of the photo. I was hoping to be able to find pngs of the different products to be able to create my own backgrounds for the different products to give the website pages a more 'full' feeling and reducing teh amount of white space by giving the products backgrounds that are more fitting to the general theme of the website.
 
+#### Styling/UI Improvements
+
+- During the period of time I had to create this application, a few emergencies came up reducing the amount of time I had to work on it, which ultimately gave me much less time to style the page and thus did not turn out the way I planned for it to visually.
+
