@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Indie+Flower&family=Slackside+One&display=swap');
 
 .main-container-auth {
   margin: 2rem;
@@ -23,9 +23,8 @@
 }
 
 .bonbon-h1 {
-  font-family: 'Darumadrop One', cursive;
+  font-family: 'Cherry Bomb One', cursive;
   font-size: 78px;
-  /* font-size: 48px; */
   color: var(--light-purple);
 }
 

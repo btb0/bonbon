@@ -1,27 +1,75 @@
 .NavBar {
+  width: 100%;
   font-size: 18px;
   /* Temporary height TODO*/
   align-items: center;
+  justify-content: space-between;
   height: 10vh;
+  border-bottom: 1px solid var(--light-purple);
+  position: relative;
 }
 
-.cart-icon {
+nav a {
+  color: var(--light-purple);
+}
+
+.cart-icon-div {
+  margin-right: 2vmin;
+  margin-left: 2vmin;
   position: relative;
   display: inline-block;
+  font-size: 30px;
+  line-height: 100%;
+  color: var(--light-purple);
+  margin-top: 8px;
+}
+
+.logout-icon-div {
+  display: inline-block;
+  font-size: 30px;
+  color: var(--light-purple);
+  margin-top: 8px;
 }
 
 .cart-badge {
   position: absolute;
-  top: -8px;
-  right: -8px;
+  top: -2.5px;
+  right: -2.5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
+  width: 17.5px;
+  height: 17.5px;
   background-color: var(--light-purple);
   color: white;
   border-radius: 50%;
   font-size: 10px;
   font-weight: bold;
+}
+
+.logo-text {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-text h1 {
+  font-family: 'Cherry Bomb One', cursive;
+  font-size: 54px;
+  color: var(--light-purple);
+}
+
+.nav-links-two {
+  height: 100%;
+  align-items: center;
+  margin-right: 5vmin;
+}
+
+.nav-links-one {
+  margin-left: 5vmin;
+}
+
+.nav-links-one a {
+  margin-right: 3.5vmin;
 }

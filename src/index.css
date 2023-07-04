@@ -1,9 +1,14 @@
 html {
   overflow-y: auto; /* Removes Bulma's dumb scrollbar that is there no matter what */
+  /* overflow-y: scroll; */
 }
 
 *, ::after, ::before {
   box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 body {

@@ -11,11 +11,11 @@ export default function IndexItem({ item, cart, setCart }) {
   }
 
   return (
-    <Link to={`/items/${item._id}`}>
-      <div>
+    <div>
+      <Link to={`/items/${item._id}`}>
         <h4>{item.name}</h4>
-        <button onClick={() => handleAddToCart(item._id)}>Add to Cart</button>
-      </div>
-    </Link>
+      </Link>
+      <button onClick={() => handleAddToCart(item._id)}>Add to Cart</button>
+    </div>
   );
 }
