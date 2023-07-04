@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import * as itemsAPI from '../../utilities/items-api';
 import IndexItem from '../../components/IndexItem/IndexItem';
-import CategoriesList from '../../components/FilterCategory/FilterCategory';
+import FilterCategory from '../../components/FilterCategory/FilterCategory';
 import FilterLocation from '../../components/FilterLocation/FilterLocation';
+import './IndexPage.css';
 
 export default function IndexPage({ cart, setCart }) {
   const [items, setItems] = useState([]);
@@ -51,20 +52,23 @@ export default function IndexPage({ cart, setCart }) {
 
   return (
     <main>
-      <div>
-        <CategoriesList 
-          categories={categoriesRef.current}
-          activeCat={activeCat}
-          setActiveCat={setActiveCat} 
-        />
-        <FilterLocation 
-          locations={locationsRef.current}
-          activeLoc={activeLoc}
-          setActiveLoc={setActiveLoc} 
-        />
+      <div className='columns'>
+        <div className='filter-container column is-one-fifth is-responsive'>
+          <FilterCategory
+            categories={categoriesRef.current}
+            activeCat={activeCat}
+            setActiveCat={setActiveCat} 
+          />
+          <FilterLocation 
+            locations={locationsRef.current}
+            activeLoc={activeLoc}
+            setActiveLoc={setActiveLoc} 
+          />
+        </div>
+        <div className='product-container column auto is-responsive'>
+          {products}
+        </div>
       </div>
-      <h1>Index</h1>
-      {products}
     </main>
   );
 }

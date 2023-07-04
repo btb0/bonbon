@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as ordersAPI from '../../utilities/orders-api';
+import './IndexItem.css';
 
 export default function IndexItem({ item, cart, setCart }) {
 
@@ -11,7 +12,10 @@ export default function IndexItem({ item, cart, setCart }) {
   }
 
   return (
-    <div>
+    <div className='IndexItem'>
+      <Link to={`/items/${item._id}`}>
+        <img className='product-idx-img' src={item.picture} alt={item.name} />
+      </Link>
       <Link to={`/items/${item._id}`}>
         <h4>{item.name}</h4>
       </Link>

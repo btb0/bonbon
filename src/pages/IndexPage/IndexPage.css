@@ -1,0 +1,14 @@
+.filter-container {
+  margin-left: 5vmin;
+  margin-top: 5vmin;
+  width: 12.5% !important;
+  border-right: 1px solid var(--light-purple);
+  padding: 0;
+}
+
+.product-container {
+  margin-top: 5vmin;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}

@@ -195,6 +195,30 @@ const Item = require('./models/item');
       "price": 4.49
     },
     {
+      "name": "Kracie European Sugar Cone Chocolate - Black Tea Latte",
+      "description": "Satisfy your sweet tooth cravings with these yummy chocolate squares! Each piece tastes like latte flavored ice cream and has a milk chocolate top layer. These sweet treats also contain crushed sugar cones! Chocolates come individually wrapped. (Black Tea Latte Flavor)",
+      "picture": "https://i.ibb.co/HqnmXsg/Kracie-European-Sugar-Cone-Black-Tea-Latte.jpg",
+      "category": "chocolate",
+      "location": "Japan",
+      "price": 3.9
+    },
+    {
+      "name": "Kracie European Sugar Cone Chocolate - Strawberry",
+      "description": "Satisfy your sweet tooth cravings with these yummy chocolate squares! Each piece tastes like strawberry ice cream and has a milk chocolate top layer. These sweet treats also contain crushed sugar cones! Chocolates come individually wrapped. (Strawberry Flavor)",
+      "picture": "https://i.ibb.co/fxzDM0f/Kracie-European-Sugar-Cone-Strawberry.jpg",
+      "category": "chocolate",
+      "location": "Japan",
+      "price": 3.9
+    },
+    {
+      "name": "Kracie European Sugar Cone Chocolate - Vanilla",
+      "description": "Satisfy your sweet tooth cravings with these yummy chocolate squares! Each piece tastes like vanilla ice cream and has a milk chocolate top layer. These sweet treats also contain crushed sugar cones! Chocolates come individually wrapped. (Vanilla Flavor)",
+      "picture": "https://i.ibb.co/bm7Lzcw/Kracie-European-Sugar-Cone-Chocolate-Vanilla.jpg",
+      "category": "chocolate",
+      "location": "Japan",
+      "price": 3.9
+    },
+    {
       "name": "Lays Ketchup Chips",
       "description": "Canadians know a thing or two about great taste and we love our Ketchup! Thats why the combination of Lay's fresh taste and tangy tomato seasoning has become a Canadian taste tradition. This crunchy, savoury flavour is loved by everyone!",
       "picture": "https://i.ibb.co/dJ4m6VZ/Lays-Ketchup-Chips.webp",
@@ -229,7 +253,7 @@ const Item = require('./models/item');
     {
       "name": "Lotte Malang Cow Milk Candy",
       "description": "Korea’s Favorite Soft and Chewy Candy made of fresh high-grade milk. A soft and fluffy Lotte Malang Cow candy with a milk flavor. The soft texture gives a delicious marshmellow like chewiness!",
-      "picture": "https://i.ibb.co/3mHnw1s/Lotte-Malang-Cow-Milk-Candy.webp",
+      "picture": "https://i.ibb.co/pj0vTGH/Lotte-Malang-Cow-Milk-Candy.png",
       "category": "candy",
       "location": "South Korea",
       "price": 3
@@ -237,7 +261,7 @@ const Item = require('./models/item');
     {
       "name": "Lotte Malang Cow Milk Candy (Strawberry)",
       "description": "Korea’s Favorite Soft and Chewy Candy made of fresh high-grade milk. A soft and fluffy Lotte Malang Cow candy with a milk flavor. The soft texture gives a delicious marshmellow like chewiness! (Strawberry flavor)",
-      "picture": "https://i.ibb.co/kBmPHjW/Lotte-Malang-Cow-Milk-Strawberry.jpg",
+      "picture": "https://i.ibb.co/K02Vvds/Lotte-Malang-Cow-Candy-Strawberry.jpg",
       "category": "candy",
       "location": "South Korea",
       "price": 3
@@ -389,6 +413,7 @@ const Item = require('./models/item');
   ]);
 
   console.log(items);
+  console.log('Qty', items.length);
 
   process.exit();
 
