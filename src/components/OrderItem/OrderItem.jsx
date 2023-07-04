@@ -1,4 +1,5 @@
 import * as ordersAPI from '../../utilities/orders-api';
+import './OrderItem.css';
 
 export default function OrderItem({ orderItem, setCart }) {
 
@@ -9,14 +10,27 @@ export default function OrderItem({ orderItem, setCart }) {
   }
 
   return (
-    // TODO: Remove temporary border styling below
-    <div style={{border: '1px solid black'}}>
-      <h3>{orderItem.item.name}</h3>
-      <h4>${orderItem.item.price?.toFixed(2)}</h4>
-      <p>Qty: {orderItem.qty}</p>
-      <button onClick={() => handleChangeQty(orderItem.item._id, orderItem.qty - 1)}> - </button>
-      <button onClick={() => handleChangeQty(orderItem.item._id, orderItem.qty + 1)}> + </button>
-      <p>Total Price: ${orderItem.extPrice?.toFixed(2)}</p>
-    </div>
+    //TODO: REMOVE TEMP STYLING
+    <tr className='center item-row'>
+      <td>
+        <div className='flex item-name'>
+            <a className='no-spacing' href={`items/${orderItem.item._id}`}>
+              <div className='item-img-container'>
+                <img className="item-img" src={orderItem.item.picture} alt={orderItem.item.name}/>
+              </div>
+            </a>
+            <a className='no-spacing' href={`items/${orderItem.item._id}`}>
+              <p className='centered-text'>{orderItem.item.name}</p>
+            </a>
+        </div>
+      </td>
+      <td className='middle'>${orderItem.item.price?.toFixed(2)}</td>
+      <td className='middle'>
+        <button className='button is-rounded is-small btn is-responsive' onClick={() => handleChangeQty(orderItem.item._id, orderItem.qty - 1)}> - </button>
+        {orderItem.qty}
+        <button className='button is-rounded is-small btn is-responsive' onClick={() => handleChangeQty(orderItem.item._id, orderItem.qty + 1)}> + </button>
+      </td>
+      <td className='middle'>${orderItem.extPrice?.toFixed(2)}</td>
+    </tr>
   );
 }

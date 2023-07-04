@@ -1,0 +1,33 @@
+.CartList {
+  padding: 0 7vmin;
+}
+
+.cart-table {
+  width: 100%;
+  margin-top: 25px;
+  table-layout: fixed;
+}
+
+.cart-list-titles {
+  border-top: 1px solid var(--white-line);
+  line-height: 3.6em;
+  border-bottom: 1px solid var(--white-line);
+}
+
+.cart-list-titles > tr > th {
+  font-weight: normal;
+  color: rgb(97, 97, 97);
+  vertical-align: middle;
+}
+
+table {
+  font-size: 18px;
+}
+
+.product-th {
+  width: 60%;
+}
+
+.cart-table td {
+  padding: 1.5em 0;
+}
