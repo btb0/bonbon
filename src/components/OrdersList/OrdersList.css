@@ -1,0 +1,7 @@
+/* Nothing to see here */
+
+.OrdersList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0.6em 7.5rem 2em 7.5rem;
+}

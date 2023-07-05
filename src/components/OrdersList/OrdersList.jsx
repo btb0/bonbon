@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import * as ordersAPI from '../../utilities/orders-api';
 import PreviousOrder from '../PreviousOrder/PreviousOrder';
+import './OrdersList.css';
 
 export default function OrdersList() {
   const [orders, setOrders] = useState([]);
@@ -18,9 +19,11 @@ export default function OrdersList() {
   ));
 
   return (
-    <section>
-      <h2>List of Orders here</h2>
-      {userOrders}
-    </section>
+    <>
+      <h1>Order History</h1>
+      <section className='OrdersList'>
+        {userOrders}
+      </section>
+    </>
   );
 }

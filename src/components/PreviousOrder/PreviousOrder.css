@@ -1,0 +1,76 @@
+.PreviousOrder {
+  border: 1px solid var(--lighter-purple);
+  flex-direction: column;
+  border-radius: 15px;
+  margin: 1.5em;
+  padding: 2em;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.1) 0px 0.25em 1em, rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em inset;
+}
+
+.order-info h3 {
+  font-size: 1.4em;
+  line-height: 1;
+}
+
+.order-info h4 {
+  margin-top: 5px;
+  line-height: 1;
+}
+
+.prev-order-img-container {
+  justify-content: flex-start;
+  margin: 0;
+  height: 15rem;
+  width: 13rem;
+}
+
+.prev-order-img-container img {
+  height: 10rem;
+}
+
+.order-info {
+  /* margin-top: 1.5em;
+  margin-left: 2em; */
+  width: 100%;
+  padding-bottom: .5em;
+  justify-content: space-between;
+  border-bottom: 0.5px solid var(--lighter-purple);
+}
+
+.order-info-two {
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  /* font-size: 1.1em; */
+}
+
+.order-info-inner {
+  font-size: 1.1em;
+  /* justify-content: center; */ 
+}
+
+.order-info-two h5 {
+  border-bottom: 0.5px solid var(--lighter-purple);
+}
+
+.order-info-two p {
+  margin: 0;
+}
+
+.history-total {
+  margin-bottom: 2em;
+}
+
+.history-total h5, .history-qty h5 {
+  font-size: 1.1em;
+  margin-bottom: .5em;
+}
+
+.history-btn {
+  width: 80%;
+  width: 100%;
+  background-color: var(--lighter-purple);
+  color: white;
+  border: 1px solid var(--lightest-purple);
+  align-self: center;
+}

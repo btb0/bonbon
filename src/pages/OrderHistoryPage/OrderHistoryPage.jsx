@@ -1,9 +1,9 @@
 import OrdersList from '../../components/OrdersList/OrdersList';
+import './OrderHistoryPage.css';
 
 export default function OrderHistoryPage() {
   return (
-    <main>
-      <h1>Order History</h1>
+    <main className='OrderHistoryPage flex'>
       <OrdersList />
     </main>
   );
