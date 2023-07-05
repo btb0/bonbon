@@ -51,8 +51,8 @@ export default function IndexPage({ cart, setCart }) {
   ));
 
   return (
-    <main>
-      <div className='columns'>
+    <main className='IndexPage'>
+      <div id="idx-inner" className='columns'>
         <div className='filter-container column is-one-fifth is-responsive'>
           <h1>Filters</h1>
           <FilterCategory

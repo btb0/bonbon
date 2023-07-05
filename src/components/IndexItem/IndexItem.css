@@ -1,4 +1,4 @@
-.IndexItem {
+/* .IndexItem {
   border: 1px solid var(--lightest-purple);
   border-radius: 1em;
   height: 24em;
@@ -9,25 +9,29 @@
   margin-bottom: 2.5vmin;
   flex-direction: column;
   align-items: center;
-  /* background: radial-gradient(ellipse closest-side at center, rgb(124, 113, 179), #D7DDE8); */
-  /* background: radial-gradient(ellipse closest-side at center, #D7DDE8, rgb(124, 113, 179)); */
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   background: linear-gradient(to top, rgba(154, 128, 199, 0.8), #fff);
-  /* box-shadow: rgba(154, 128, 199, .4) 0px 15px 60px -12px inset, rgba(154, 128, 199, 0.3) 0px 682px 36px -18px inset, rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; */
-  /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0,/ 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
-  /* box-shadow: rgba(154, 128, 199, .8) 0px 55px 90px 12px inset, rgba(154, 128, 199, 0.5) 0px 682px 36px -18px inset, rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; */
-  /* box-shadow: rgba(154, 128, 199, .4) 0px 15px 60px -12px inset, rgba(154, 128, 199, 0.3) 0px 682px 36px -18px inset, rgba(0, 0, 0, 0.15) 0px 3px 3px 0px; */
-  /* background: radial-gradient(ellipse closest-side at center, rgba(124, 113, 179, 1), #D7DDE8, rgba(124, 113, 179, 0.8));
-  background-size: 50%; */
+} */
 
+.IndexItem {
+  outline: 0.5px solid var(--light-grey);
+  width: 23em;
+  margin: 0;
+  height: 25em;
+  flex-direction: column;
+  background-color: white;
 }
 
 .IndexItem h4 {
   font-weight: bold !important;
   font-size: 1.3em;
   text-align: center;
-  color: white;
+  color: var(--light-grey);
+  color: rgb(97, 97, 97);
+  color: var(--light-purple);
+  color: var(--lighter-purple);
   padding: 10px 15px;
+  padding-top: 15px;
 }
 
 .price-idx-add {
@@ -37,7 +41,9 @@
 }
 
 .IndexItem p {
-  font-family: 'Nunito'
+  font-family: 'Nunito';
+  display: inline;
+  margin: 0;
 }
 
 /* CHANGE FROM VMIN TO REM/EM/PX */
@@ -45,10 +51,10 @@
   background-color: white;
   height: 16.65em;
   width: 16.65em;
-  margin-top: 3vmin;
-  border: 1px solid var(--lightest-purple);
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-  border-radius: 10px;
+  /* margin-top: 3vmin; */
+  border: 1px solid var(--white-line);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 15px;
   overflow: hidden;
   /* margin-bottom: 7.5px; */
 }
@@ -59,7 +65,7 @@
 }
 
 .product-idx-img {
-  height: 27.5vmin;
+  height: 25.5vmin;
 }
 
 .IndexItem button {
@@ -67,5 +73,19 @@
   background-color: transparent;
   border: none;
   outline: none;
-  color: white;
+  color: var(--grey-text);
+  position: relative;
+  left: 9em;
+}
+
+.add-cart-con {
+  height: 1em;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 40
 }
