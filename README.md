@@ -21,7 +21,7 @@ This application utilizes JSON Web Tokens to provide authentication to users whe
 - Heroku for deployment
 
 ## Getting Started
-The website can be found here:
+The website can be found here: https://bonbon-410-473d50b9f174.herokuapp.com/
 
 ### Planning Materials
 

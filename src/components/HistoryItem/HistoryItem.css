@@ -1,4 +1,4 @@
-.item-row {
+.item-row-history {
   display: grid;
   grid-template-columns: 5fr repeat(3, .3fr);
 }
@@ -16,6 +16,10 @@
   justify-content: flex-start;
 }
 
-.item-row td {
+.item-row-history td {
   align-self: center;
+}
+
+.testClass {
+  display: flex;
 }

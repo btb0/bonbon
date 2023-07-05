@@ -3,7 +3,7 @@ import './HistoryItem.css';
 
 export default function HistoryItem({ orderItem }) {
   return (
-    <tr className='center item-row'>
+    <tr className='center item-row-history'>
       <td>
         <div className='flex item-name'>
             <Link className='no-spacing' to={`/items/${orderItem.item._id}`}>
