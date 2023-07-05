@@ -79,6 +79,17 @@
   left: 9em; */
 }
 
+#add-cart-index-page {
+  margin-top: 1em;
+  background-color: var(--lighter-purple);
+  border: 1px solid var(--light-purple);
+  color: white;
+}
+
+#add-cart-index-page:hover {
+  opacity: 0.8;
+}
+
 .bottom-idx {
   display: flex;
   flex-direction: column;

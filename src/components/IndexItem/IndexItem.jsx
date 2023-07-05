@@ -25,7 +25,7 @@ export default function IndexItem({ item, cart, setCart }) {
           {/* <button onClick={() => handleAddToCart(item._id)}>
             <span className="material-symbols-outlined">add_shopping_cart</span>
           </button> */}
-          <button className="button is-rounded" onClick={() => handleAddToCart(item._id)}>
+          <button id="add-cart-index-page" className="button is-rounded" onClick={() => handleAddToCart(item._id)}>
             Add to Cart
           </button>
         </div>
