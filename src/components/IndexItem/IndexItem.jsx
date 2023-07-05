@@ -14,7 +14,9 @@ export default function IndexItem({ item, cart, setCart }) {
   return (
     <div className="IndexItem flex">
       <div className="img-idx-container flex-ctr-ctr">
-        <img className='product-idx-img' src={item.picture} alt={item.name} />
+        <Link to={`/items/${item._id}`}>
+          <img className='product-idx-img' src={item.picture} alt={item.name} />
+        </Link>
       </div>
       <div className="bottom-idx">
         <Link to={`/items/${item._id}`}>
