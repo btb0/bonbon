@@ -1,3 +1,16 @@
 .FilterCategory {
   flex-direction: column;
+  line-height: 1.6;
+}
+
+.FilterCategory h4 {
+  font-size: 1.1em;
+  border-bottom: 1px solid var(--white-line);
+  margin-right: 1.2em;
+  margin-bottom: .5em;
+}
+
+.FilterCategory input[type=radio] {
+  accent-color: var(--lighter-purple);
+  margin-bottom: 15px;
 }

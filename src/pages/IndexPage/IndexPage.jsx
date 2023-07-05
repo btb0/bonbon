@@ -54,11 +54,13 @@ export default function IndexPage({ cart, setCart }) {
     <main>
       <div className='columns'>
         <div className='filter-container column is-one-fifth is-responsive'>
+          <h1>Filters</h1>
           <FilterCategory
             categories={categoriesRef.current}
             activeCat={activeCat}
             setActiveCat={setActiveCat} 
           />
+          <br />
           <FilterLocation 
             locations={locationsRef.current}
             activeLoc={activeLoc}

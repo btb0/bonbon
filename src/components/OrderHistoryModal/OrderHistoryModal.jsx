@@ -41,11 +41,11 @@ export default function OrderHistoryModal({ order, modalOpen, setModalOpen }) {
           <h3>Total Price ({order.totalOrderQty} Items): ${order?.totalOrderPrice.toFixed(2)}</h3>
         </div>
         <section className="modal-body">
-          <section className='CartList history-table'>
-            <table className='cart-table'>
-              <thead className='cart-list-titles'>
-                <tr className='center'>
-                  <th className='product-th' style={{textAlign: 'left'}}>Product</th>
+          <section className='history-table'>
+            <table className='cart-table cart-table-history'>
+              <thead className='cart-list-titles history-titles'>
+                <tr>
+                  <th className='product-th'>Product</th>
                   <th>Price</th>
                   <th>Quantity</th>
                   <th>Total</th>

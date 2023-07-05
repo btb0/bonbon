@@ -1,11 +1,11 @@
 .IndexItem {
   border: 1px solid var(--lightest-purple);
   border-radius: 1em;
-  height: 42.5vmin;
+  height: 24em;
   color: white;
   font-family: 'Karla';
   font-weight: bold;
-  width: 37.5vmin;
+  width: 20.5em;
   margin-bottom: 2.5vmin;
   flex-direction: column;
   align-items: center;
@@ -24,19 +24,48 @@
 
 .IndexItem h4 {
   font-weight: bold !important;
+  font-size: 1.3em;
+  text-align: center;
+  color: white;
+  padding: 10px 15px;
+}
+
+.price-idx-add {
+  justify-content: space-between;
+  padding: 0 5em;
+  width: 100%;
+}
+
+.IndexItem p {
+  font-family: 'Nunito'
 }
 
 /* CHANGE FROM VMIN TO REM/EM/PX */
 .img-idx-container {
   background-color: white;
-  height: 30vmin;
-  width: 30vmin;
+  height: 16.65em;
+  width: 16.65em;
   margin-top: 3vmin;
   border: 1px solid var(--lightest-purple);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
   border-radius: 10px;
+  overflow: hidden;
+  /* margin-bottom: 7.5px; */
+}
+
+.product-idx-img:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 
 .product-idx-img {
   height: 27.5vmin;
+}
+
+.IndexItem button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
 }

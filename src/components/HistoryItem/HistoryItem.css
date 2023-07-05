@@ -1,0 +1,21 @@
+.item-row {
+  display: grid;
+  grid-template-columns: 5fr repeat(3, .3fr);
+}
+
+.item-name {
+  display: flex;
+  align-items: center;
+}
+
+.item-name p {
+  width: 500px;
+  margin: 0;
+  margin-left: 2.5em;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.item-row td {
+  align-self: center;
+}
