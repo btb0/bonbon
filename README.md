@@ -6,7 +6,7 @@ bonbon+ is a MERN-Stack mock e-commerce application that sells different snack p
 This application utilizes JSON Web Tokens to provide authentication to users when making an account, giving users the ability and authorization to browse bonbon's catalog, add products to their shopping cart, and ultimately 'pay' for their order by checking out. Users can also view any and all orders made previously, including the price, quantity of items in that order as well as which items were in it.
 ## Screenshots
 
-![Home Page](./public/assets/bonbon%20home.png)
+![Home Page](./public/assets/bonbonhomepage.png)
 ![Shopping Cart](./public/assets/bonbon-shoppingcart.png)
 ![Order History Modal](./public/assets/bonbon-orderhistorymodal.png)
 
