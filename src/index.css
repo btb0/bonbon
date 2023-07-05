@@ -1,5 +1,6 @@
 html {
-  overflow-y: auto; /* Removes Bulma's dumb scrollbar that is there no matter what */
+  /* Removes Bulma's dumb scrollbar that is there no matter what */
+  overflow-y: auto;
   /* overflow-y: scroll; */
 }
 
@@ -8,11 +9,12 @@ html {
 }
 
 *::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
 }
 
 body {
   font-family: 'Karla', sans-serif;
+  color: var(--grey-text);
 }
 
 :root {

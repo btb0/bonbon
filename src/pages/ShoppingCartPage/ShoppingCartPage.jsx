@@ -12,7 +12,6 @@ export default function ShoppingCartPage({ cart, setCart }) {
     async function getCart() {
       const cart = await ordersAPI.getCart();
       setCart(cart)
-      console.log('hi')
     }
     getCart();
   }, []);
@@ -21,7 +20,7 @@ export default function ShoppingCartPage({ cart, setCart }) {
 
   async function handleCheckout() {
     await ordersAPI.checkout();
-    navigate('/');
+    navigate('/orders');
   }
 
   return (

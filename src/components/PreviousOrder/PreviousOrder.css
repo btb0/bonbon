@@ -46,7 +46,9 @@
 
 .order-info-inner {
   font-size: 1.1em;
-  /* justify-content: center; */ 
+  margin-left: 25px;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .order-info-two h5 {
@@ -73,4 +75,13 @@
   color: white;
   border: 1px solid var(--lightest-purple);
   align-self: center;
+}
+
+.history-btn:hover {
+  color: white;
+  opacity: 0.9;
+}
+
+.history-btn:focus {
+  color: white;
 }

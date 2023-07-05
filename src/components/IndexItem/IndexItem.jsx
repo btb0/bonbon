@@ -17,7 +17,9 @@ export default function IndexItem({ item, cart, setCart }) {
         <img className='product-idx-img' src={item.picture} alt={item.name} />
       </div>
       <h4>{item.name}</h4>
-      <button onClick={() => handleAddToCart(item._id)}>Add to Cart</button>
+      <button onClick={() => handleAddToCart(item._id)}>
+        <span class="material-symbols-outlined">add_shopping_cart</span>
+      </button>
     </div>
   );
 

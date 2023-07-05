@@ -27,7 +27,9 @@ export default function ItemDetailPage({ cart, setCart }) {
     <main className='ItemDetailPage'>
       <div className="details-container columns">
         <section className='details-image column is-half'>
-          <img src={selectedItem.picture} alt={selectedItem.name} />
+          <div className="details-img-container flex-ctr-ctr">
+            <img src={selectedItem.picture} alt={selectedItem.name} />
+          </div>
         </section>
         <section className='details-info column auto'>
           <p className='right'>SKU: {selectedItem.itemSKU}</p>
