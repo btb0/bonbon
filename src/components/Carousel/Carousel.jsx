@@ -5,24 +5,28 @@ import './Carousel.css';
 export default function Carousel() {
   const [activePicture, setActivePicture] = useState(0);
 
+  // TODO: Change product links to not be hardcoded - will have to update every time i reseed database
   const pictures = [
-    // require('../../../public/assets/cow.jpg'),
-    // require('../../../public/assets/hichew.jpg'),
-    // require('../../../public/assets/milkis.jpg'),
-    'https://i.ibb.co/VxRz6Lr/cow.jpg',
-    'https://i.ibb.co/vvK1NhG/hichew.jpg',
-    'https://i.ibb.co/yV34D4J/milkis.jpg'
+    {picture: 'https://i.ibb.co/VxRz6Lr/cow.jpg', product: 'http://localhost:3000/items/64a481d4b61da45b16277b52'},
+    {picture: 'https://i.ibb.co/vvK1NhG/hichew.jpg', product: 'http://localhost:3000/items/64a481d4b61da45b16277b43'},
+    {picture: 'https://i.ibb.co/yV34D4J/milkis.jpg', product: 'http://localhost:3000/items/64a481d4b61da45b16277b58'}
   ];
 
+  // const pictures = [
+  //   'https://i.ibb.co/VxRz6Lr/cow.jpg',
+  //   'https://i.ibb.co/vvK1NhG/hichew.jpg',
+  //   'https://i.ibb.co/yV34D4J/milkis.jpg'
+  // ];
+
   const picture = pictures.map((picture, idx) => (
-    <CarouselPicture picture={picture} key={idx} />
+    <CarouselPicture picture={picture.picture} product={picture.product} key={idx} />
   ));
 
   const updatePicture = (newPicture) => {
     if (newPicture < 0) {
       newPicture = 0;
     } else if (newPicture >= pictures.length) {
-      newPicture = pictures.length -1;
+      newPicture = pictures.length - 1;
     }
     setActivePicture(newPicture)
   }
@@ -42,11 +46,11 @@ export default function Carousel() {
               <button 
                 className="indicator-btn" 
                 onClick={() => updatePicture(idx)}
-                key={picture}
+                key={picture.picture}
               >
                 <span 
                   className={`material-symbols-outlined ${idx === activePicture ? "indicator-symbol-active" : "indicator-symbol"}`}
-                  key={picture}
+                  key={picture.picture}
                 >radio_button_checked</span>
               </button>
             )

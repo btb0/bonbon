@@ -1,18 +1,27 @@
 .carousel {
   overflow: hidden;
-  width: 700px;
+  height: 900px;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 1em;
+  transform: scale(1.1);
 }
 
 .inner {
   white-space: nowrap;
-  transition: transform 0.3s;
+  transition: transform .5s ease-in-out;
 }
 
 .carousel-buttons {
   justify-content: space-evenly;
+  transform: scale(0.6);
+  opacity: 0.3;
+}
+
+.carousel-buttons:hover {
+  opacity: 1;
 }
 
 .arrow-btn {

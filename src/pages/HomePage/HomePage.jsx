@@ -1,12 +1,16 @@
 import { Helmet } from 'react-helmet';
 import Carousel from '../../components/Carousel/Carousel';
+import './HomePage.css';
 
 export default function HomePage() {
   return (
-    <main>
-      <h1>HOME PAGE</h1>
-      <p>snacks and stuff idk</p>
-      <Carousel />
+    <main className='HomePage'>
+      <section className='carousel-container flex-ctr-ctr'>
+        <Carousel />
+      </section>
+      <section>
+        {/* Featured Section */}
+      </section>
     </main>
   );
 }
