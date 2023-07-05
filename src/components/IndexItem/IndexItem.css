@@ -17,8 +17,9 @@
   outline: 0.5px solid var(--light-grey);
   width: 23em;
   margin: 0;
-  height: 25em;
+  height: 30em;
   flex-direction: column;
+  align-items: center;
   background-color: white;
 }
 
@@ -42,7 +43,6 @@
 
 .IndexItem p {
   font-family: 'Nunito';
-  display: inline;
   margin: 0;
 }
 
@@ -51,7 +51,7 @@
   background-color: white;
   height: 16.65em;
   width: 16.65em;
-  /* margin-top: 3vmin; */
+  margin-top: 1.5em;
   border: 1px solid var(--white-line);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 15px;
@@ -68,18 +68,32 @@
   height: 25.5vmin;
 }
 
-.IndexItem button {
+.add-cart-con button {
   cursor: pointer;
-  background-color: transparent;
-  border: none;
-  outline: none;
+  /* background-color: transparent; */
+  /* border: none; */
+  /* outline: none; */
   color: var(--grey-text);
-  position: relative;
-  left: 9em;
+  vertical-align: middle;
+  /* position: relative;
+  left: 9em; */
+}
+
+.bottom-idx {
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
 
 .add-cart-con {
-  height: 1em;
+  line-height: 1.6;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-cart-con h4 {
 }
 
 .material-symbols-outlined {
