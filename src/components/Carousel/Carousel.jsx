@@ -7,19 +7,18 @@ export default function Carousel() {
 
   // TODO: Change product links to not be hardcoded - will have to update every time i reseed database
   const pictures = [
-    {picture: 'https://i.ibb.co/VxRz6Lr/cow.jpg', product: 'http://localhost:3000/items/64a481d4b61da45b16277b52'},
-    {picture: 'https://i.ibb.co/vvK1NhG/hichew.jpg', product: 'http://localhost:3000/items/64a481d4b61da45b16277b43'},
-    {picture: 'https://i.ibb.co/yV34D4J/milkis.jpg', product: 'http://localhost:3000/items/64a481d4b61da45b16277b58'}
+    {picture: 'https://i.ibb.co/VxRz6Lr/cow.jpg', product: 'http://localhost:3000/items/64a481d4b61da45b16277b52', product_live: 'https://bonbon-410-473d50b9f174.herokuapp.com/items/64a481d4b61da45b16277b52'},
+    {picture: 'https://i.ibb.co/vvK1NhG/hichew.jpg', product: 'http://localhost:3000/items/64a481d4b61da45b16277b43', product_live: 'https://bonbon-410-473d50b9f174.herokuapp.com/items/64a481d4b61da45b16277b43'},
+    {picture: 'https://i.ibb.co/yV34D4J/milkis.jpg', product: 'http://localhost:3000/items/64a481d4b61da45b16277b58', product_live: 'https://bonbon-410-473d50b9f174.herokuapp.com/items/64a481d4b61da45b16277b58'}
   ];
 
-  // const pictures = [
-  //   'https://i.ibb.co/VxRz6Lr/cow.jpg',
-  //   'https://i.ibb.co/vvK1NhG/hichew.jpg',
-  //   'https://i.ibb.co/yV34D4J/milkis.jpg'
-  // ];
-
   const picture = pictures.map((picture, idx) => (
-    <CarouselPicture picture={picture.picture} product={picture.product} key={idx} />
+    <CarouselPicture 
+      picture={picture.picture} 
+      product={picture.product} 
+      product_live={picture.product_live}
+      key={idx} 
+    />
   ));
 
   const updatePicture = (newPicture) => {
